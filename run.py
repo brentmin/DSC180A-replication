@@ -16,9 +16,12 @@ def main(targets):
 
     if 'data' in targets:
         with open('data/raw/steam_games.json') as steam:
-            print(steam.read())
-            #df = json.load(steam)
-        #print(df[0])
+            print('Load in dataset')
+            #steam_str = steam.read()
+            #steam_str = steam_str.replace("\'", "\"")
+            df = json.load(steam)
+            print('Done loading dataset')
+        print('Do dataset stuff here')
 
 
 if __name__ == '__main__':
