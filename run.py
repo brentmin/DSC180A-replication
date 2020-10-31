@@ -19,7 +19,7 @@ def main(targets):
             print('Load in dataset')
             #steam_str = steam.read()
             #steam_str = steam_str.replace("\'", "\"")
-            df = json.load(steam)
+            #df = json.load(steam)
             print('Done loading dataset')
         print('Do dataset stuff here')
 
