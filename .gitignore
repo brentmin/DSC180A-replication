@@ -4,5 +4,6 @@ __pycache__
 .DS_Store
 
 data/raw/**
-
+data/Steam.txt
+data/temp/**
 # Original Paper

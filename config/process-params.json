@@ -1,0 +1,10 @@
+{
+    "dataset_name": "Steam",
+    "dataset_path": "data/raw/steam_reviews.json.gz",
+    "userId_column": "username", 
+    "productId_column": "product_id",
+    "rating_column": "hours",
+    "date_column": "date",
+    "temp_output_path": "data/temp/",
+    "output_path": "data/"
+}

@@ -5,7 +5,7 @@ This project is compares a the Self-Attentive Sequential Recommendation system a
 In your terminal type 'python run.py data' to run the project
 
 # Notebooks
-There are no relevant notebooks for this project yet.1
+There are no relevant notebooks for this project yet.
 
 # References
-You can find the original SASRec paper and the paper that this project was inspired by.
+You can find the original SASRec paper and the paper that this project was inspired by. You can also find the github repositories for the corresponding papers.
