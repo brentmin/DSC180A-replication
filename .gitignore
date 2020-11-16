@@ -3,6 +3,6 @@ __pycache__
 
 **.DS_Store
 
-data/**
+data/raw/**
 
 # Original Paper
