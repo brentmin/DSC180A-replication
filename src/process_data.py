@@ -1,4 +1,5 @@
 #This was derived form the original processing script in references/SASRec/data/DataProcessing.py
+import os
 import gzip
 from collections import defaultdict
 from datetime import datetime
@@ -9,6 +10,10 @@ def parse(path):
         yield eval(l)
 
 def process_data(dataset_name, dataset_path, userId_column, productId_column, rating_column, date_column, temp_output_path, output_path):
+
+    os.makedirs(os.path.dirname(temp_output_path), exist_ok=True)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
     countU = defaultdict(lambda: 0)
     countP = defaultdict(lambda: 0)
     line = 0
@@ -25,7 +30,7 @@ def process_data(dataset_name, dataset_path, userId_column, productId_column, ra
         time = datetime.strptime(l[date_column], '%Y-%m-%d').date()
         countU[rev] += 1
         countP[asin] += 1
-        print(line)
+
     f.close()
 
     usermap = dict()
