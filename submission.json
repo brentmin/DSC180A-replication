@@ -1,5 +1,5 @@
 {
-    "config": ["config/data-params.json", "config/process_params.json"],  
+    "config": ["config/data-params.json", "config/process-params.json"],  
     "build": "run.py", 
     "library": ["src"], 
     "notebook": ["notebooks/EDA_Steam_Dataset.ipynb"], 
