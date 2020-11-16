@@ -16,7 +16,10 @@ def process_data(dataset_name, dataset_path, userId_column, productId_column, ra
     f = open(temp_output_path + 'reviews_' + dataset_name + '.txt', 'w')
     for l in parse(dataset_path):
         line += 1
-        f.write(" ".join([l[userId_column], l[productId_column], str(l[rating_column]), str(datetime.strptime(l[date_column], '%Y-%m-%d').date())]) + ' \n')
+        try:
+            f.write(" ".join([l[userId_column], l[productId_column], str(l[rating_column]), str(datetime.strptime(l[date_column], '%Y-%m-%d').date())]) + ' \n')
+        except:
+            continue
         asin = l[productId_column]
         rev = l[userId_column]
         time = datetime.strptime(l[date_column], '%Y-%m-%d').date()
