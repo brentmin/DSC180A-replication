@@ -84,7 +84,7 @@ if __name__ == "__main__" :
             rawData.append(tuple(item.split()))
 
     data = Partition(rawData)
-    if sys.argv[1] == 'all':
+    if sys.argv[1] == 'test':
 
         interactions = defaultdict(set)
         topPop = topPopular(data.train_U2G)
@@ -98,7 +98,7 @@ if __name__ == "__main__" :
         iteration = 0
         for user in data.users:
             iteration += 1
-            if iteration % 1000 == 0: print(iteration)
+            if iteration % 10000 == 0: print(iteration)
             if len(interactions[user]) < 1:
                 numUsers -= 1
                 # print(len(interactions[user]), iteration)
