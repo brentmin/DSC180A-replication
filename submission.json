@@ -1,7 +1,4 @@
 {
-    "config": ["config/data-params.json", "config/process-params.json"],  
-    "build": "run.py", 
-    "library": ["src"], 
-    "notebook": ["notebooks/EDA_Steam_Dataset.ipynb"], 
-    "targets": ["data", "process"] 
+    "dockerhub-id": "brentmin:dsc180a-replication:latest",
+    "repository-id": "https://github.com/brentmin/DSC180A-replication.git"
 }
