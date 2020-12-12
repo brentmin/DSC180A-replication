@@ -2,8 +2,8 @@
 This project is compares a the Self-Attentive Sequential Recommendation system against baselines recommender systems.
 
 # How to Run
-In your terminal type 'python run.py all' to run the topPopular Baseline HR10 model.
-In your terminal type 'python run.py data' to get the data from the web.
+In your terminal type 'python run.py test' to run the topPopular Baseline HR10 model.  
+In your terminal type 'python run.py data' to get the data from the web.  
 Type 'python run.py process' to process the data into a file for the models.
 
 # Notebooks
